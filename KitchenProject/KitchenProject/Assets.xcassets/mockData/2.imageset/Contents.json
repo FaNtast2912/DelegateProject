@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "borch1-pic_32ratio_1200x800-1200x800-26520.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

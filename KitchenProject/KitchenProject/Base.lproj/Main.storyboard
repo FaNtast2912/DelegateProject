@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Steward-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Steward" id="BYZ-38-t0r" customClass="Steward" customModule="KitchenProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Steward" translatesAutoresizingMaskIntoConstraints="NO" id="rzN-jF-2JA">
+                                <rect key="frame" x="10" y="59" width="373" height="615"/>
+                                <color key="backgroundColor" red="0.2156862745" green="0.44705882349999998" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FpJ-VS-OIB">
+                                <rect key="frame" x="118" y="724" width="158" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Заказать еду">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.96078431369999995" green="0.41960784309999999" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="getDish:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hw1-5b-QkM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.2156862745" green="0.44705882349999998" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rzN-jF-2JA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Upc-Xc-LMu"/>
+                            <constraint firstItem="rzN-jF-2JA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="anf-dj-3dw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FpJ-VS-OIB" secondAttribute="bottom" constant="59" id="hjY-Y9-194"/>
+                            <constraint firstItem="FpJ-VS-OIB" firstAttribute="top" secondItem="rzN-jF-2JA" secondAttribute="bottom" constant="50" id="lOk-O6-bI5"/>
+                            <constraint firstItem="FpJ-VS-OIB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="118" id="n6l-yn-41m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FpJ-VS-OIB" secondAttribute="trailing" constant="117" id="usR-7v-yq6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rzN-jF-2JA" secondAttribute="trailing" constant="10" id="z1s-Zk-oVe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dishImageView" destination="rzN-jF-2JA" id="fo8-kx-S2h"/>
+                        <outlet property="getDishButton" destination="FpJ-VS-OIB" id="Vof-BW-0Rl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Steward" width="1600" height="1066"/>
+    </resources>
+</document>
